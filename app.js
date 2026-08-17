@@ -21,6 +21,7 @@
 
   const formatNumber = (value) => numberFormatter.format(Math.round(value));
   const formatWan = (value, digits = 2) => `${(value / 10000).toFixed(digits)}万`;
+  const formatWanLabel = (value) => (value / 10000).toFixed(1);
   const formatSignedWan = (value, digits = 2) => `${value > 0 ? "+" : value < 0 ? "−" : ""}${Math.abs(value / 10000).toFixed(digits)}万`;
   const formatPercent = (value, digits = 1) => value === null ? "—" : `${value > 0 ? "+" : value < 0 ? "−" : ""}${Math.abs(value * 100).toFixed(digits)}%`;
   const valueClass = (value) => value > 0 ? "value-positive" : value < 0 ? "value-negative" : "";
@@ -53,10 +54,18 @@
       return `
         <div class="period-group">
           <div class="period-bars">
-            <div class="period-bar y2025" style="height:${height2025}%" title="2025年${item.label} ${formatNumber(item.sales_2025)}辆"></div>
-            <div class="period-bar y2026" style="height:${height2026}%" title="2026年${item.label} ${formatNumber(item.sales_2026)}辆"></div>
+            <div class="period-bar y2025" style="height:${height2025}%" title="2025年${item.label} ${formatNumber(item.sales_2025)}辆" aria-label="2025年${item.label} ${formatNumber(item.sales_2025)}辆">
+              <span class="period-bar-value">${formatWanLabel(item.sales_2025)}</span>
+            </div>
+            <div class="period-bar y2026" style="height:${height2026}%" title="2026年${item.label} ${formatNumber(item.sales_2026)}辆" aria-label="2026年${item.label} ${formatNumber(item.sales_2026)}辆">
+              <span class="period-bar-value">${formatWanLabel(item.sales_2026)}</span>
+            </div>
           </div>
           <div class="period-label">${item.label}</div>
+          <div class="period-values" aria-hidden="true">
+            <span class="y2025">${formatWanLabel(item.sales_2025)}</span>
+            <span class="y2026">${formatWanLabel(item.sales_2026)}</span>
+          </div>
         </div>`;
     }).join("");
   }

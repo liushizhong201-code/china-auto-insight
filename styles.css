@@ -509,6 +509,20 @@ h1 span {
   transition: height 450ms cubic-bezier(.2,.8,.2,1), filter 150ms ease;
 }
 
+.period-bar-value {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  color: var(--ink);
+  font: 700 10px/1 var(--mono);
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+.period-bar.y2025 .period-bar-value { color: #5f6a68; }
+.period-bar.y2026 .period-bar-value { color: var(--signal-dark); }
+
 .period-bar:hover { filter: saturate(1.4); }
 .period-bar.y2025 { background: #87918f; }
 .period-bar.y2026 { background: var(--signal); }
@@ -518,6 +532,8 @@ h1 span {
   text-align: center;
   font: 700 11px/1 var(--mono);
 }
+
+.period-values { display: none; }
 
 .chart-legend {
   display: flex;
@@ -784,6 +800,18 @@ dialog::backdrop { background: rgba(12, 20, 25, 0.7); backdrop-filter: blur(4px)
   .period-chart { gap: 5px; min-height: 270px; }
   .period-bars { height: 205px; }
   .period-bar { width: min(16px, 45%); }
+  .period-bar-value { display: none; }
+  .period-label { padding-bottom: 5px; }
+  .period-values {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2px;
+    padding-bottom: 7px;
+    text-align: center;
+    font: 700 8px/1 var(--mono);
+  }
+  .period-values .y2025 { color: #5f6a68; }
+  .period-values .y2026 { color: var(--signal-dark); }
   .price-summary { grid-template-columns: 1fr; }
   .price-row { grid-template-columns: 82px 1fr; }
   .price-value { grid-column: 2; }
