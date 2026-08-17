@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="70个持续可比车系的2026年1—7月累计同比分析，观察价格、能源与车型级别中的销量变化。">
+  <meta name="theme-color" content="#17232c">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="降幅从哪里来？｜中国乘用车样本分析">
+  <meta property="og:description" content="70个持续可比车系的价格、能源与级别变化">
+  <title>降幅从哪里来？｜中国乘用车样本分析</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <a class="brand" href="#story" aria-label="返回项目首页">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>AUTO / FIELD NOTE</span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      <a class="active" href="#story">项目</a>
+      <a href="#analysis">分析</a>
+      <a href="#series">车系</a>
+      <a href="#method">方法</a>
+    </nav>
+    <span class="header-scope">PUBLIC · YTD 2026</span>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="story">
+      <div>
+        <p class="eyebrow">中国乘用车样本研究 · 2026年1—7月</p>
+        <h1>降幅<span>从哪里来？</span></h1>
+        <p class="lede">70个持续可比车系的累计销量同比下降24.4%。这个作品集追踪降幅在指导价、能源和车型级别之间的分布，并保留车系累计排名供进一步核对。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#analysis">进入分析</a>
+          <a class="button secondary" href="#method">查看口径</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="研究范围">
+        <p class="hero-card-label">COMPARABLE PANEL</p>
+        <strong>70</strong>
+        <p>从AutoLink 2026年7月公开零售榜前100母样本中，保留2025年和2026年1—7月销量均完整的车系。</p>
+        <div class="scope-axis" aria-label="分析维度">
+          <div>指导价</div>
+          <div>能源</div>
+          <div>级别</div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="kpi-strip" aria-label="核心指标">
+      <div class="kpi">
+        <span class="kpi-label">2025年1—7月</span>
+        <strong class="kpi-value" id="kpi-2025">—</strong>
+      </div>
+      <div class="kpi">
+        <span class="kpi-label">2026年1—7月</span>
+        <strong class="kpi-value" id="kpi-2026">—</strong>
+      </div>
+      <div class="kpi">
+        <span class="kpi-label">累计变化</span>
+        <strong class="kpi-value negative" id="kpi-delta">—</strong>
+      </div>
+      <div class="kpi">
+        <span class="kpi-label">累计同比</span>
+        <strong class="kpi-value negative" id="kpi-yoy">—</strong>
+      </div>
+    </section>
+
+    <section class="story-band" aria-labelledby="finding-title">
+      <div class="story-inner reveal">
+        <div class="story-head">
+          <div>
+            <p class="section-kicker">Three findings</p>
+            <h2 id="finding-title">先看三条结论</h2>
+          </div>
+          <p>样本整体在收缩，增长并未普遍转移到另一个结构。更准确的问题是：哪些结构承担了主要降幅，哪些区域仍保持增长。</p>
+        </div>
+        <div class="finding-grid">
+          <article class="finding">
+            <span class="finding-index">FINDING / 01</span>
+            <strong id="finding-energy-value">—</strong>
+            <p id="finding-energy-copy">—</p>
+          </article>
+          <article class="finding">
+            <span class="finding-index">FINDING / 02</span>
+            <strong id="finding-level-value">—</strong>
+            <p id="finding-level-copy">—</p>
+          </article>
+          <article class="finding">
+            <span class="finding-index">FINDING / 03</span>
+            <strong>价格结论不稳健</strong>
+            <p>按指导价下限、中点和上限归类，最大降幅分别落在不同区间。页面保留三种结果，不输出单一价格带答案。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="analysis" aria-labelledby="analysis-title">
+      <div class="section-head reveal">
+        <div>
+          <p class="section-kicker">Interactive analysis</p>
+          <h2 id="analysis-title">变化落在哪些结构</h2>
+        </div>
+        <p>所有图表都基于同一组70个持续可比车系。累计结果可以按能源、车型级别和三种价格规则回算。</p>
+      </div>
+
+      <div class="analysis-grid">
+        <article class="panel reveal">
+          <div class="panel-head">
+            <div>
+              <h3>七个月样本走势</h3>
+              <p>每月为70车系汇总，不包含单车系月度明细</p>
+            </div>
+            <span class="metric-chip">单位：辆</span>
+          </div>
+          <div class="period-chart" id="period-chart" aria-label="2025年与2026年1至7月样本销量对比图"></div>
+          <div class="chart-legend" aria-label="图例">
+            <span class="legend-item"><i class="legend-swatch base"></i>2025年</span>
+            <span class="legend-item"><i class="legend-swatch current"></i>2026年</span>
+          </div>
+        </article>
+
+        <article class="panel reveal">
+          <div class="panel-head">
+            <div>
+              <h3>能源结构</h3>
+              <p>按当前能源属性汇总累计变化</p>
+            </div>
+            <span class="metric-chip">0为中轴</span>
+          </div>
+          <div class="bar-list" id="energy-bars"></div>
+        </article>
+
+        <article class="panel reveal">
+          <div class="panel-head">
+            <div>
+              <h3>车型级别</h3>
+              <p>正值向右，负值向左</p>
+            </div>
+            <span class="metric-chip">12个级别</span>
+          </div>
+          <div class="bar-list" id="level-bars"></div>
+        </article>
+
+        <article class="panel reveal">
+          <div class="panel-head">
+            <div>
+              <h3>指导价敏感性</h3>
+              <p>同一车系价格区间跨带时，归类规则会改变结论</p>
+            </div>
+            <span class="metric-chip" id="price-rule-label">指导价中点</span>
+          </div>
+          <div class="toggle-group" aria-label="价格归类规则">
+            <button class="toggle-button" type="button" data-price-rule="lower" aria-pressed="false">按下限</button>
+            <button class="toggle-button" type="button" data-price-rule="midpoint" aria-pressed="true">按中点</button>
+            <button class="toggle-button" type="button" data-price-rule="upper" aria-pressed="false">按上限</button>
+          </div>
+          <div class="price-summary">
+            <div class="price-callout">
+              <small>当前规则下最大降幅</small>
+              <strong id="price-callout-band">—</strong>
+              <p id="price-callout-value">—</p>
+            </div>
+            <div class="price-list" id="price-list"></div>
+          </div>
+        </article>
+
+        <article class="panel span-all reveal">
+          <div class="panel-head">
+            <div>
+              <h3>能源×级别矩阵</h3>
+              <p>点击有数据的单元格查看累计规模与车系数量</p>
+            </div>
+            <span class="metric-chip">29个组合</span>
+          </div>
+          <div class="matrix-toolbar">
+            <p class="matrix-note">红色为下降，蓝绿色为增长</p>
+            <div class="toggle-group" aria-label="矩阵指标">
+              <button class="toggle-button" type="button" data-matrix-metric="delta" aria-pressed="true">变化量</button>
+              <button class="toggle-button" type="button" data-matrix-metric="yoy_rate" aria-pressed="false">同比</button>
+            </div>
+          </div>
+          <div class="matrix-scroll" tabindex="0" aria-label="能源与级别矩阵，可横向滚动">
+            <table class="matrix-table" id="matrix-table"></table>
+          </div>
+          <div class="matrix-detail" aria-live="polite">
+            <span class="matrix-detail-index">CELL</span>
+            <div>
+              <strong id="matrix-detail-title">选择一个组合</strong>
+              <span id="matrix-detail-copy">累计规模与车系数量将在这里显示</span>
+            </div>
+            <strong class="matrix-detail-value" id="matrix-detail-value">—</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="series-section" id="series" aria-labelledby="series-title">
+      <div class="series-inner">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-kicker">Series contribution</p>
+            <h2 id="series-title">70车系累计贡献</h2>
+          </div>
+          <p>保留名称、两年累计销量、增减量、同比和当前属性。公开版不包含逐车系14个月序列。</p>
+        </div>
+
+        <div class="series-toolbar reveal">
+          <div class="field">
+            <label for="series-query">搜索</label>
+            <input id="series-query" type="search" placeholder="车系、品牌或厂商" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="series-energy">能源</label>
+            <select id="series-energy"></select>
+          </div>
+          <div class="field">
+            <label for="series-level">级别</label>
+            <select id="series-level"></select>
+          </div>
+          <div class="field">
+            <label for="series-sort">排序</label>
+            <select id="series-sort">
+              <option value="delta_asc">降幅从大到小</option>
+              <option value="delta_desc">增量从大到小</option>
+              <option value="ytd_2026_desc">2026年累计销量</option>
+              <option value="yoy_desc">同比从高到低</option>
+            </select>
+          </div>
+        </div>
+        <div class="series-summary">
+          <span id="series-count">显示70个车系</span>
+          <span>* 2025年同期不足1万辆，小基数同比需谨慎</span>
+        </div>
+        <div class="table-shell reveal">
+          <table class="series-table">
+            <thead>
+              <tr>
+                <th>排名</th>
+                <th>车系</th>
+                <th>属性</th>
+                <th>指导价</th>
+                <th class="num">2025累计</th>
+                <th class="num">2026累计</th>
+                <th class="num">变化量</th>
+                <th class="num">操作</th>
+              </tr>
+            </thead>
+            <tbody id="series-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="method" aria-labelledby="method-title">
+      <div class="section-head reveal">
+        <div>
+          <p class="section-kicker">Method & review</p>
+          <h2 id="method-title">数据怎么来，结论到哪里停</h2>
+        </div>
+        <p>公开页面只放累计分析层。完整逐月面板、采集证据和获取脚本保留在本地研究版本。</p>
+      </div>
+
+      <div class="method-grid">
+        <article class="panel reveal">
+          <div class="panel-head">
+            <div>
+              <h3>样本流程</h3>
+              <p>从公开母样本到可比面板</p>
+            </div>
+            <span class="metric-chip">固定口径</span>
+          </div>
+          <div class="pipeline">
+            <div class="pipeline-step">
+              <span>01 / 100</span>
+              <div><strong>固定母样本</strong><p>以AutoLink 2026年7月公开零售榜前100车系为起点。</p></div>
+            </div>
+            <div class="pipeline-step">
+              <span>02 / 70</span>
+              <div><strong>筛选完整面板</strong><p>保留2025年和2026年1—7月销量均非空的70个车系，缺失不填零。</p></div>
+            </div>
+            <div class="pipeline-step">
+              <span>03 / YTD</span>
+              <div><strong>生成累计分析层</strong><p>按车系汇总两年累计销量，再计算能源、级别、价格与矩阵结果。</p></div>
+            </div>
+            <div class="pipeline-step">
+              <span>04 / WEB</span>
+              <div><strong>分离公开版本</strong><p>发布包保留70车系累计记录，不携带逐车系月度面板和采集文件。</p></div>
+            </div>
+          </div>
+
+          <div class="quality-grid" aria-label="质量指标">
+            <div class="quality-item"><span>连续重复获取</span><strong id="quality-runs">—</strong></div>
+            <div class="quality-item"><span>核心字段完整率</span><strong id="quality-completeness">—</strong></div>
+            <div class="quality-item"><span>稳定ID连接率</span><strong id="quality-match">—</strong></div>
+            <div class="quality-item"><span>排除历史不完整车系</span><strong id="quality-excluded">—</strong></div>
+          </div>
+
+          <div class="comparison">
+            <h3>官方总量旁路对账</h3>
+            <div id="comparison-list"></div>
+          </div>
+        </article>
+
+        <article class="panel reveal">
+          <div class="panel-head">
+            <div>
+              <h3>来源与边界</h3>
+              <p>平台口径分开标注，不相加、不调平</p>
+            </div>
+            <span class="metric-chip">公开链接</span>
+          </div>
+
+          <div class="source-list">
+            <a class="source-link" href="https://autolink.sae-china.org/" target="_blank" rel="noopener noreferrer">
+              <div><strong>AutoLink</strong><span>车系销量与当前属性，页面标注数据来源易车</span></div><b>↗</b>
+            </a>
+            <a class="source-link" href="https://data.cpcadata.com/" target="_blank" rel="noopener noreferrer">
+              <div><strong>乘联分会公开统计站</strong><span>中国狭义乘用车国内零售累计总量旁路对账</span></div><b>↗</b>
+            </a>
+            <a class="source-link" href="https://corp.yiche.com/legal-notices/" target="_blank" rel="noopener noreferrer">
+              <div><strong>易车法律声明</strong><span>公开展示保留来源说明，不复制平台图片或界面资源</span></div><b>↗</b>
+            </a>
+          </div>
+
+          <ul class="limitations">
+            <li>70车系从2026年7月前100母样本中筛出，存在当前榜单幸存者偏差。</li>
+            <li>排除30个历史不完整车系会弱化新上市、改名和换代车系的增长贡献。</li>
+            <li>指导价、能源、级别和厂商为当前属性快照，不代表历史属性迁移。</li>
+            <li>价格带结果会随指导价下限、中点和上限规则变化，不能宣称单一价格带结论。</li>
+            <li>AutoLink页面标注数据来源易车，不等同乘联分会官方狭义乘用车零售。</li>
+            <li>本项目不能代表中国乘用车全市场，也不提供原始明细下载。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <aside class="disclosure" aria-label="数据声明">
+      <p>数据来自AutoLink公开页面，页面标注数据来源易车。本项目为个人求职作品集，展示70个持续可比车系的自制分析结果，不代表中国乘用车全市场或乘联分会官方车系零售数据。</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <span>CHINA PASSENGER CAR SAMPLE STUDY · 2026</span>
+    <span>公开版：车系累计分析层 · 数据核对日期：2026-08-17</span>
+  </footer>
+
+  <dialog id="series-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-head">
+      <h3 id="dialog-title">车系详情</h3>
+      <button class="dialog-close" id="dialog-close" type="button" aria-label="关闭">×</button>
+    </div>
+    <div class="dialog-body">
+      <p class="dialog-subtitle" id="dialog-subtitle"></p>
+      <div class="dialog-metrics">
+        <div class="dialog-metric"><span>当前指导价</span><strong id="dialog-price">—</strong></div>
+        <div class="dialog-metric"><span>2025年1—7月</span><strong id="dialog-2025">—</strong></div>
+        <div class="dialog-metric"><span>2026年1—7月</span><strong id="dialog-2026">—</strong></div>
+        <div class="dialog-metric"><span>累计变化</span><strong id="dialog-delta">—</strong></div>
+        <div class="dialog-metric"><span>累计同比</span><strong id="dialog-yoy">—</strong></div>
+      </div>
+      <p class="dialog-note" id="dialog-rank-copy"></p>
+      <p class="dialog-note">公开版只显示累计结果。逐车系月度序列保留在本地研究版本。</p>
+    </div>
+  </dialog>
+
+  <script src="./public-data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
